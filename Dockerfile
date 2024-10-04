@@ -20,7 +20,7 @@ COPY static /app/static
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Експортуємо порти для HTTP та сокет-сервера
-EXPOSE 3000 5000
+EXPOSE 3000
 
 # Вказуємо команду для запуску програми
 CMD ["python", "main.py"]
